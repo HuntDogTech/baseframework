@@ -8,15 +8,31 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * Created by JonDai on 2016/7/6.
  */
 @Service
 @Transactional(readOnly = true)
-public class UserMananger {
+public class UserManager {
     @Resource
     private UserDao dao;
+
+    /**
+     * 获取所有用户
+     * @return
+     */
+    public List<User> getAllUser(){
+        return (List<User>) dao.findAll();
+    }
+
+    public User getUserByUserName(String userName){
+        return dao.findByUserName(userName);
+    }
+    public User getUserByID(Long id){
+        return dao.findOne(id);
+    }
 
     /**
      * 用户注册简单

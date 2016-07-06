@@ -12,16 +12,16 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = cn.huntdog.baseframework.Applicationtest.class)
-public class UserManangerTest {
+public class UserManagerTest {
     @Autowired
-    private UserMananger userMananger;
+    private UserManager userManager;
 
     @Test
     public void register(){
         User user = new User();
         user.setUserName("jondai");
         user.setPassword("123456");
-        userMananger.register(user);
+        userManager.register(user);
     }
 
 
@@ -30,7 +30,7 @@ public class UserManangerTest {
         User user = new User();
         user.setUserName("jondai");
         user.setPassword("123456");
-        boolean isExtis = userMananger.login(user);
+        boolean isExtis = userManager.login(user);
         if(isExtis){
             System.out.println("Login...");
         }else{
