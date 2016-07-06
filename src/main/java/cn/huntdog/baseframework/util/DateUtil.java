@@ -1,4 +1,4 @@
-package cn.huntdog.baseframeworke.util;
+package cn.huntdog.baseframework.util;
 
 import java.sql.Timestamp;
 import java.text.ParseException;

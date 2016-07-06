@@ -1,8 +1,7 @@
-package cn.huntdog.baseframeworke;
+package cn.huntdog.baseframework;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Created by JonDai {jondai@aliyun.com} on 2016/3/10.

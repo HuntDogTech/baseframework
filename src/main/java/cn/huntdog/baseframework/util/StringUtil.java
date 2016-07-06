@@ -1,4 +1,4 @@
-package cn.huntdog.baseframeworke.util;
+package cn.huntdog.baseframework.util;
 
 import org.apache.commons.lang.StringUtils;
 

@@ -1,7 +1,7 @@
-package cn.huntdog.baseframeworke.service;
+package cn.huntdog.baseframework.service;
 
-import cn.huntdog.baseframeworke.dao.UserDao;
-import cn.huntdog.baseframeworke.entity.User;
+import cn.huntdog.baseframework.dao.UserDao;
+import cn.huntdog.baseframework.entity.User;
 import com.google.common.base.Optional;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

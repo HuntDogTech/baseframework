@@ -1,4 +1,4 @@
-package cn.huntdog.baseframeworke.entity;
+package cn.huntdog.baseframework.entity;
 
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

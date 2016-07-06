@@ -1,4 +1,4 @@
-package cn.huntdog.baseframeworke.entity;
+package cn.huntdog.baseframework.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
