@@ -3,9 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>cn.huntdog</groupId>
   <artifactId>baseframework</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>baseframework Maven Webapp</name>
+
+    <!--<modules>-->
+        <!--<module>../framework/core</module>-->
+    <!--</modules>-->
+
+    <name>baseframework Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <parent>

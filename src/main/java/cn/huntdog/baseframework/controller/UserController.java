@@ -2,6 +2,9 @@ package cn.huntdog.baseframework.controller;
 
 import cn.huntdog.baseframework.entity.User;
 import cn.huntdog.baseframework.service.UserManager;
+import cn.huntdog.framework.core.web.JsonResult;
+import cn.huntdog.framework.core.web.Result;
+import cn.huntdog.framework.core.web.WebStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,8 +27,11 @@ public class UserController {
      * @return
      */
     @RequestMapping(value="/{id}", method= RequestMethod.GET)
-    public User getUser(@PathVariable Long id) {
-        return userManager.getUserByID(id);
+    public JsonResult getUser(@PathVariable Long id) {
+        JsonResult jsonResult = new JsonResult();
+
+        return jsonResult.setWebStatus(WebStatus.STATUS_SUCCESS)
+                .setModel(userManager.getUserByID(id));
     }
 
 //    @RequestMapping(value="/{user}/customers", method=RequestMethod.GET)
