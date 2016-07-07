@@ -10,13 +10,13 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * Created by JonDai on 2016/7/6.asdfasdf德玛西亚
+ * Created by JonDai on 2016/7/6.
  */
 @RestController
 @RequestMapping(value="/users")
 public class UserController {
     @Resource
-    private UserManager userManager;
+    private UserManager userManager1;
 
     /**
      * 服务启动后，浏览器中输入：http://localhost:8080/users/1 即可查看到该数据的json格式
@@ -25,7 +25,7 @@ public class UserController {
      */
     @RequestMapping(value="/{id}", method= RequestMethod.GET)
     public User getUser(@PathVariable Long id) {
-        return userManager.getUserByID(id);
+        return userManager1.getUserByID(id);
     }
 
 //    @RequestMapping(value="/{user}/customers", method=RequestMethod.GET)
