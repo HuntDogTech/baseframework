@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 @RequestMapping(value="/users")
 public class UserController {
     @Resource
-    private UserManager userManager1;
+    private UserManager userManager2;
 
     /**
      * 服务启动后，浏览器中输入：http://localhost:8080/users/1 即可查看到该数据的json格式
@@ -25,7 +25,7 @@ public class UserController {
      */
     @RequestMapping(value="/{id}", method= RequestMethod.GET)
     public User getUser(@PathVariable Long id) {
-        return userManager1.getUserByID(id);
+        return userManager2.getUserByID(id);
     }
 
 //    @RequestMapping(value="/{user}/customers", method=RequestMethod.GET)
