@@ -1,9 +1,7 @@
 package cn.huntdog.baseframework.controller;
 
-import cn.huntdog.baseframework.entity.User;
 import cn.huntdog.baseframework.service.UserManager;
 import cn.huntdog.framework.core.web.JsonResult;
-import cn.huntdog.framework.core.web.Result;
 import cn.huntdog.framework.core.web.WebStatus;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
