@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 /**
- * Created by JonDai on 2016/7/6.德玛西亚
+ * Created by JonDai on 2016/7/6.asdfasdf德玛西亚
  */
 @RestController
 @RequestMapping(value="/users")
