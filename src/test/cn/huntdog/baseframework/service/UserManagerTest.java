@@ -37,4 +37,9 @@ public class UserManagerTest {
             System.out.println("用户名或者密码错误...");
         }
     }
+    @Test
+    public void testhh(){
+        System.out.println("Hello hh");
+    }
+
 }
